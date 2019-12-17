@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1040498030042",
+    "firebase_url": "https://personal-elem-ru.firebaseio.com",
+    "project_id": "personal-elem-ru",
+    "storage_bucket": "personal-elem-ru.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040498030042:android:f724b7d6c69bfc3dc77ce3",
+        "android_client_info": {
+          "package_name": "ru.elem.personal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040498030042-l033qjjo0696p3o7ac82urnv2l47iq0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPHM4qyxo7X6AAZSaxu72ABQTdV3ylHZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040498030042-l033qjjo0696p3o7ac82urnv2l47iq0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

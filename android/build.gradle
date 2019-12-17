@@ -1,0 +1,42 @@
+buildscript {
+    ext {
+        kotlin_version = '1.3.50'
+        compileSdkVersion = 29                // or higher
+        targetSdkVersion = 29                // or higher
+        supportLibVersion = "1.0.2"           // or higher
+        playServicesLocationVersion = "16.0.0"  // or higher
+    }
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1' // не менять!!! должна быть версия 3.3.1
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'io.fabric.tools:gradle:1.31.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
